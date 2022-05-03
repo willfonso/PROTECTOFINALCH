@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/products.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ntz6tho.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Rosanti</title>
+</head>
+
+<body>
+
+
+    <!-- ------ NAVBAR ------ -->
+    <nav class="navbar">
+        <div class="navbar-center">
+            <span class="nav-icon">
+                <a href="index.html" class="nav-img"><i class="uil uil-tear"></i></a>
+            </span>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" id="hide-menu"></i>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">NOSOTROS</a></li>
+                    <li><a href="./products.html">TIENDA</a></li>
+                    <li><a href="./contact.html">CONTACTO</a></li>
+                </ul>
+                <div class="cart-btn" id="open-cart">
+                    <span class="nav-icon">
+                        <i class="fas fa-cart-plus"></i>
+                    </span>
+                    <div class="cart-items">0</div>
+                </div>
+            </div>
+            <i class="fas fa-bars" id="show-menu"></i>
+        </div>
+    </nav>
+
+
+    <!-- ------ FILTRO ------ -->
+    <section class="filter">
+        <div class="filter-links" id="filter-links">
+            <ul>
+                <li><a id="filtroMate" href="">MATES</a></li>
+                <li><a id="filtroTermo" href="">TERMOS</a></li>
+                <li><a id="filtroYerbera" href="">YERBERAS</a></li>
+                <li><a id="filtroBombilla" href="">BOMBILLAS</a></li>
+                <button id="limpiarFiltro" href="">LIMPIAR FILTRO</button>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- ------ CARD (ADDED WITH JS) ------ -->
+    <section class="products">
+        <div class="products-center" id="containerCards">
+            <!-- Added with JS -->
+        </div>
+    </section>
+
+    <div class="addedToCart" id="addedToCart">
+        <span id="addedToCartSpan">Añadido al carrito</span>
+    </div>
+    <!-- ------ CART ------ -->
+
+    <div class="cart-overlay" id="cartV">
+        <div class="cart" id="cartT">
+            <span class="close-cart" id="close-cart">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <h2>TUS PRODUCTOS</h2>
+            <div class="cart-content">
+                <div class="cart-item">
+                    <!--ADD WITH JS-->
+                </div>
+                <div class="cart-footer">
+                    <h3>Total : $ <span class="cart-total">0</span></h3>
+                    <button class="comprar" id="comprar">COMPRAR</button>
+                </div>
+                <span class="compraExitosa" id="compraExitosa">COMPRASTE TUS PRODUCTOS</span>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- ------ FOOTER ------ -->
+    <div class="bck-crema">
+        <footer class="footer">
+            <div class="contact">
+                <h1>Contacto</h1>
+                <span><b>Telefono:</b> +54 9 11 1234567 <br></span>
+                <span><br><b>Lunes - Viernes: </b><br>9.00am - 8.00pm<br></span>
+                <span><br><b>Sabado: </b><br>10.00am - 6.00pm<br></span>
+                <span><br>example@gmail.com</span>
+            </div>
+
+            <div class="information">
+                <h1>Informacion</h1>
+                <span>Nosotros <br></span>
+                <span><br>Contacto <br></span>
+                <span><br>FAQs <br></span>
+            </div>
+
+            <div class="redes">
+                <h1>Redes Sociales</h1>
+                <div class="social-img">
+                    <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- ------ JS ------ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../JS/data.js"></script>
+    <script src="../JS/variables.js"></script>
+    <script src="../JS/filters.js"></script>
+    <script src="../JS/renders.js"></script>
+    <script src="../JS/cart.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700
+        });
+    </script>
+
+</body>
+
+</html>

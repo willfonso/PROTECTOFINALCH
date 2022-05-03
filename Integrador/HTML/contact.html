@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ntz6tho.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Rosanti</title>
+</head>
+<body>
+    
+    <!-- ------ NAVBAR ------ -->
+    <nav class="navbar">
+        <div class="navbar-center">
+            <span class="nav-icon">
+                <a href="index.html" class="nav-img"><i class="uil uil-tear"></i></a>
+            </span>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" id="hide-menu"></i>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">NOSOTROS</a></li>
+                    <li><a href="./products.html">TIENDA</a></li>
+                    <li><a href="./contact.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" id="show-menu"></i>
+        </div>
+    </nav>
+
+    <!-- ------ FORM ------ -->
+    <section class="sectionForm">
+        <div class="formulario" id="formu">
+            <form action="" class="form" id="form" name="formulario">
+
+                <h1>CONTÁCTANOS</h1>
+
+                <div class="data">
+                    <label for="name">Nombre y Apellido:</label><br>
+                    <input type="text" name="name" id="user_name" class="text"><br>
+                    <span class="errorNombre" id="errorNombre"></span>
+                </div>
+
+                <div class="data">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="userEmail" class="text"><br>
+                    <span class="errorEmail" id="errorEmail"></span>
+                </div>
+
+                <div class="data-textarea">
+                    <label for="msg">Mensaje:</label>
+                    <textarea name="userMessage" id="msg" cols="100" rows="10"></textarea>
+                    <span class="errorMensaje" id="errorMensaje"></span>
+                </div>
+
+                <div class="boton">
+                    <input type="submit" value="Enviar" name="enviar" id="enviar" class="submit">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="formSend" id="formSend">
+        <span id="formSendSpan">¡Enviado con éxito!</span>
+    </div>
+
+
+<!-- ------ JS ------ -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="../JS/form.js"></script>
+</body>
+</html>
